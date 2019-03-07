@@ -14,6 +14,14 @@ module.exports = {
   plugins: [
     'prettier'
   ],
+  globals: {
+    '$': true
+  },
   // add your custom rules here
-  rules: {}
+  rules: {
+    'prettier/prettier': 'error',
+    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-unused-vars': ['error', { args: 'none' }],
+  }
 }
