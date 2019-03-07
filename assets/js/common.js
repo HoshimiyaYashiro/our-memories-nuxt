@@ -1,18 +1,16 @@
-'use strict'
-function getAll(selector) {
-  return Array.prototype.slice.call(document.querySelectorAll(selector), 0)
-}
-
-// Toggles
-const $burgers = getAll('.burger')
-
-if ($burgers.length > 0) {
-  $burgers.forEach($el => {
-    $el.addEventListener('click', () => {
-      const target = $el.dataset.target
-      const $target = document.getElementById(target)
-      $el.classList.toggle('is-active')
-      $target.classList.toggle('is-active')
-    })
-  })
+module.exports = {
+  initIndexPage: function() {
+    const $burgers = $('.burger')
+    if ($burgers.length > 0) {
+      $burgers.each((index, el) => {
+        const $el = $(el)
+        $el.on('click', () => {
+          const target = $el.data('target')
+          const $target = $('#' + target)
+          $el.toggleClass('is-active')
+          $target.toggleClass('is-active')
+        })
+      })
+    }
+  }
 }

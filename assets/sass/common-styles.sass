@@ -10,8 +10,29 @@
 a.navbar-item
   font-family: 'Arima Madurai', cursive
   text-align: center
-  &:hover
+  text-decoration: none
+  &:hover, &.nuxt-link-active
     background: transparent
     color: #f48473
+
 img
   max-width: 100%
+.theme-image-container 
+  background-image: url('/bg/bg-top.png')
+  background-size: contain
+  background-repeat: no-repeat
+  background-position: center top
+  height: 120px
+.theme-image-bottom 
+  background-image: url('/bg/bg-bottom.png')
+  background-position: center bottom
+.title-container 
+  text-align: center
+.wedding-title 
+  font-family: 'Tangerine', cursive
+  font-size: 4rem
+  font-style: normal
+  font-weight: normal
+  color: #685850
+.page-body
+  padding: 1rem 0
