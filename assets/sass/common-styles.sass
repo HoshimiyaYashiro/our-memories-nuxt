@@ -3,6 +3,7 @@
 @import '~bulma/sass/layout/_all'
 @import '~bulma/sass/grid/_all'
 @import '~bulma/sass/elements/container'
+@import '~bulma/sass/elements/image'
 @import '~bulma/sass/components/navbar'
 @import url('https://fonts.googleapis.com/css?family=Arima+Madurai|Athiti|Charm|Charmonman|Dancing+Script|Montserrat|Roboto|Srisakdi|Thasadith|Tangerine|Parisienne')
 .navbar-center
@@ -17,6 +18,8 @@ a.navbar-item
 
 img
   max-width: 100%
+.img-love
+  width: 80%
 .theme-image-container 
   background-image: url('/bg/bg-top.png')
   background-size: contain
@@ -36,3 +39,46 @@ img
   color: #685850
 .page-body
   padding: 1rem 0
+.flex-center
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-wrap: wrap
+.is-256x256
+  height: 256px
+  width: 256px
+.rounded-flower
+  background-image: url('/bg/flower-rounded.png')
+  background-position: center
+  background-size: contain
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%,-50%)
+  width: 400px
+  height: 400px
+.person-description
+  width: 100%
+  text-align: center
+  font-family: 'Srisakdi', cursive
+.person-card
+  min-height: 500px
+.accent
+  margin: 2rem 0
+  height: 60px
+  width: 100%
+  background-position: center
+  background-repeat: no-repeat
+  background-size: contain
+.accent-top
+  background-image: url('/bg/accents.png')
+.accent-bottom
+  background-image: url('/bg/accents.png')
+.social-link
+  width: 30px
+  height: 30px
+  background-image: url('/bg/social-facebook.png')
+  background-position: center
+  background-repeat: no-repeat
+  background-size: contain
+  transform: translateY(5px)

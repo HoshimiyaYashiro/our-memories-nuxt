@@ -2,12 +2,15 @@
   <div class="page-header">
     <div class="theme-image-container" />
     <div class="title-container">
-      <div class="wedding-title">
+      <div class="wedding-title is-hidden-mobile">
         Our Memories
       </div>
     </div>
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
+        <div class="wedding-title is-hidden-desktop is-size-2 flex-center">
+          Our Memories
+        </div>
         <a
           role="button"
           class="navbar-burger burger"

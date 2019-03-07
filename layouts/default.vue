@@ -3,7 +3,9 @@
     <div class="container page-container test-sass">
       <app-header />
       <div class="page-body">
+        <div class="accent accent-top"></div>
         <nuxt />
+        <div class="accent accent-bottom"></div>
       </div>
       <div class="page-footer">
         <div class="theme-image-container theme-image-bottom" />
